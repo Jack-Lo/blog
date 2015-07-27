@@ -2,18 +2,11 @@
 layout: default
 title: 山里育
 ---
-<div class="m-aritcle">
-  <ul class="list">
-    <li><a href="#">a1</a></li>
-    <li><a href="#">a2</a></li>
-    <li><a href="#">a3</a></li>
-  </ul>
-<div>
 
 <div class="m-article">
   <ul class="list">
   {% for post in site.posts %}
-    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ post.date date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
