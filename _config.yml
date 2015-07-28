@@ -1,4 +1,4 @@
 encoding: utf-8
-baseurl : 
+baseurl : /blog
 asseturl : assets
 permalink: date
